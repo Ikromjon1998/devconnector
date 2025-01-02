@@ -61,6 +61,31 @@ Before you begin, ensure you have the following installed:
 
 ---
 
+## Live Demo
+
+This application is deployed and available for testing here: [DevConnector Backend Application](https://devconnector-9te5.onrender.com/)
+
+**Notes**:
+- **Testing Access**: No IP restrictions are applied, so anyone can test the application and explore its features. Feel free to test user authentication, post management, and profile creation functionalities.
+- **Free Instance Spin-Down**: This application is hosted on a free instance of Render. If the instance has been inactive, it may take **up to 50 seconds** to spin up when you first access the URL.
+
+---
+
+## Contributing
+
+Contributions to this project are highly encouraged! If you find any bugs, have suggestions for improvement, or wish to add new features, feel free to open a Pull Request (PR).
+
+### How to Contribute
+1. **Fork the Repository**: Create your own copy of the project.
+2. **Make Changes**: Add your feature or fix issues in a new branch.
+3. **Submit a PR**: Once done, submit a PR for review.
+
+### Continuous Deployment
+When a PR is merged into the `main` branch:
+- The updates are automatically deployed to the live application at [https://devconnector-9te5.onrender.com/](https://devconnector-9te5.onrender.com/), making your changes immediately available for testing.
+
+---
+
 ## API Routes
 
 ### Users Routes
@@ -79,7 +104,8 @@ Before you begin, ensure you have the following installed:
       {
         "name": "John Doe",
         "email": "johndoe@example.com",
-        "password": "yourpassword"
+        "password": "yourpassword",
+        "password_confirmation": "yourpassword"
       }
       ```
 
