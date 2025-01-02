@@ -46,15 +46,9 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
-4. Create a `.env` file in the root directory and configure the following environment variables:
+4. Copy the `.env.example` file to `.env` in the root directory and replace the placeholder values with your actual values:
    ```env
-   MONGO_URI=your_mongo_db_connection_string
-   SECRET_OR_KEY=your_secret_key
-   ```
-
-   Example:
-   ```env
-   MONGO_URI=mongodb+srv://username:password@clustername.mongodb.net/database?retryWrites=true&w=majority
+   MONGO_URI=mongodb+srv://<DATABASE_USER_NAME>:<password>@devconnector.0kdup.mongodb.net/?retryWrites=true&w=majority&appName=devconnector
    SECRET_OR_KEY=secret
    ```
 
@@ -191,7 +185,12 @@ project-root/
 │   │   └── profiles.js  # Profile routes
 │
 ├── validation/
+│   ├── education.js     # Education validation
+│   ├── experience.js    # Experience validation
+│   ├── is-empty.js      # Check if input is empty
 │   ├── login.js         # Login validation
+│   ├── post.js          # Post validation
+│   ├── profile.js       # Profile validation
 │   └── register.js      # Register validation
 │
 ├── server.js            # Main server file
